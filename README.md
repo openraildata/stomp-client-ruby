@@ -2,11 +2,11 @@
 
 
 ## Client class
-The code for a ruby class which will poll the national rail stomp service could look similar to the below code block.
+The code for a ruby class polling the national rail stomp service could look similar to the code block below.
 
 The `initialize` method sets up the client. For the `security_token` variable, use your security key from the 'My Feeds' page.
 
-The `run` method will connect to the stomp service and subscribe to the queue. This process will run until the client is closed. When the client receeived a new message from the queue, it will print the mody of the message before sending an acknowlegement to the stomp service that the message was received.
+The `run` method will connect to the stomp service and subscribe to the queue. This process will run until the client is closed. When the client receives a new message from the queue, it will print the body of the message before sending an acknowledgment to the stomp service that the message was received.
 
 The `shutdown` method can be called to close the connection and halt the process.
 
